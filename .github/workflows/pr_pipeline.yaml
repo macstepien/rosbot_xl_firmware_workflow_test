@@ -37,7 +37,7 @@ jobs:
           level: ${{ needs.get-bump.outputs.bump }}
 
       - name: Create tag
-        run: git tag ${{ steps.package.outputs.version }}
+        run: git tag ${{ steps.bump-semver.outputs.version }}
       
       - name: Publish tags
         run: git push --tags

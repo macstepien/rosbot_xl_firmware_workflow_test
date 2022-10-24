@@ -41,6 +41,9 @@ jobs:
 
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
+        with:
+          with_initial_version: false
+          semver_only: true
 
       - uses: actions-ecosystem/action-bump-semver@v1
         id: bump-semver

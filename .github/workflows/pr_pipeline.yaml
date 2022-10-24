@@ -2,7 +2,7 @@ name: PR pipeline
 on:
   pull_request:
     branches: master
-    type: [closed]
+    types: [closed]
 
 jobs:
   get-bump:
